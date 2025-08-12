@@ -81,6 +81,8 @@
 import java.awt.*;
 import java.lang.Math ;
 import java.io.* ;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 public class Foil extends java.applet.Applet {
  
@@ -6833,6 +6835,14 @@ public class Foil extends java.applet.Applet {
     f.add("Center", foil) ;
     f.resize(800, 600);
     f.show() ;
+
+    f.addWindowListener(new WindowAdapter() {
+	    @Override
+	    public void windowClosing(WindowEvent e) {
+                    // Terminate the program after the close button is clicked.
+		    System.exit(0);
+	    }
+    });
 
     foil.init() ;
     foil.start() ;
