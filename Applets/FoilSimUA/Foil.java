@@ -5259,7 +5259,7 @@ public class Foil extends java.applet.Applet {
 
     f = new Frame("FoilSim II Application Version 1.5a") ;
     f.add("Center", foil) ;
-    f.resize(800, 600);
+    f.resize(620, 430);
     f.show() ;
 
     f.addWindowListener(new WindowAdapter() {

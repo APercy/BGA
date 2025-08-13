@@ -6831,7 +6831,7 @@ public class Foil extends java.applet.Applet {
   public static void main(String args[]) {
     Foil foil = new Foil() ;
 
-    f = new Frame("FoilSim III - Airfoil mode - Undergrad Version") ;
+    f = new Frame("FoilSim III - Version 1.4d - Undergrad Version") ;
     f.add("Center", foil) ;
     f.resize(800, 600);
     f.show() ;
